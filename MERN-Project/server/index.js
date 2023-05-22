@@ -17,7 +17,7 @@ app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 
 
-const CONNECTION_URL = 'mongodb+srv://se:se1234@cluster0.nre6b.mongodb.net/seDatabase?retryWrites=true&w=majority'
+const CONNECTION_URL = <YOURURL>
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
